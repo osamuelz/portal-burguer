@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Burguer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <div class="container topo__barra">
+      <a class="marca" href="#">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUonWIeWvLQNCYNbuY236ErvJmZAIoq9s2ItFenOUtYBtj5bABQwWrPOdiTPZxZnsIupI2QLaeul8nYr0exPnf0cB75pu_p0d62n92BxololdypF7Ktr4Et2d9Pa61uahmREATOyLIPLl0-paA8sECW_LMYIhOs9jq7q7t4yIaNgTfDg3GCm1ishSHBpeSasT7UZgcjEj39c9WF_UzNlTx6P5-U0KxWfBHeTkLZk4" alt="Logo Portal Burguer">
+        <span>Portal Burguer</span>
+      </a>
+      <nav class="menu">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#promocoes">Promoções</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="topo__acoes">
+        <a class="botao botao--sm" href="#pedido"><span class="material-symbols-outlined">shopping_bag</span>Fazer Pedido</a>
+        <div class="avatar-topo"><span class="material-symbols-outlined">person</span></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="brilho brilho--1"></div>
+      <div class="brilho brilho--2"></div>
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <div class="selo-topo">
+            <span class="material-symbols-outlined cheio">local_fire_department</span>
+            <span>EXPERIÊNCIA GOURMET PORTAL</span>
+            <i class="ponto"></i>
+            <b>ARTESANAL DE VERDADE</b>
+          </div>
+          <h1>O melhor burguer <br>
+            <span class="destaque">da turma!
+              <svg viewBox="0 0 100 12" preserveAspectRatio="none"><path d="M0,8 Q50,0 100,8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+            </span>
+          </h1>
+          <p class="hero__sub">Monte seu pedido e deixe o layout com a sua cara usando Flexbox. Carne suculenta, queijos fundidos no ponto ideal e pão brioche dourado na chapa.</p>
+          <div class="beneficios">
+            <span><span class="material-symbols-outlined">verified</span> 100% Artesanal</span>
+            <span><span class="material-symbols-outlined">electric_moped</span> Entrega Rápida</span>
+            <span><span class="material-symbols-outlined">eco</span> Ingredientes Selecionados</span>
+          </div>
+          <div class="hero__cta">
+            <a class="botao botao--lg" href="#pedido"><span class="material-symbols-outlined i-22">restaurant_menu</span>Fazer pedido</a>
+            <a class="botao botao--suave" href="#cardapio">Ver Cardápio <span class="material-symbols-outlined">arrow_downward</span></a>
+          </div>
+          <div class="prova">
+            <div class="prova__avatares"><span>G</span><span>M</span><span>B</span></div>
+            <div>
+              <div class="estrelas">
+                <span class="material-symbols-outlined cheio i-16">star</span><span class="material-symbols-outlined cheio i-16">star</span><span class="material-symbols-outlined cheio i-16">star</span><span class="material-symbols-outlined cheio i-16">star</span><span class="material-symbols-outlined cheio i-16">star</span>
+                <b>4.9 / 5</b>
+              </div>
+              <p>Mais de 1.800 pedidos entregues no mês</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__moldura">
+            <div class="hero__fundo"></div>
+            <div class="hero__foto"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWpBi-7XjvGZ_9sLmLyOxwpGIuoD4AeRyOENmeLjR1zO2gkCjn_9z_D0tcbgAf8Rkq9dJC4b-umNKVq7P9_Na0Fy06pftxHuWAklgY7ysUWnOZlsoupyvRIUEUU8ddFFYsM_drT0aSRCntzE_jBwIr7b6tYrF27fy6wrsgCplfVLHFnr0OiFOGHZCfdkALO33EZQaXbu0orRaOoSzNSxrK0WRrI1TlehhIzmujgXI" alt="Portal Burguer Artesanal"></div>
+            <div class="flutuante flutuante--blend">
+              <div class="flutuante__icone"><span class="material-symbols-outlined i-24">workspace_premium</span></div>
+              <div><strong>Blend da Casa</strong><small>Costela &amp; Fraldinha</small></div>
+            </div>
+            <div class="flutuante flutuante--brasa"><span class="material-symbols-outlined i-20">local_fire_department</span>Na Brasa Viva</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="secao secao--rosa" id="cardapio">
+      <div class="container">
+        <div class="cabecalho">
+          <div class="cabecalho__texto">
+            <div class="eyebrow"><span class="material-symbols-outlined i-20">menu_book</span>NOSSO CARDÁPIO ARTESANAL</div>
+            <h2>Cardápio</h2>
+            <p>Receitas autorais preparadas na hora com o frescor e a textura que você merece. Escolha seu favorito e peça em instantes!</p>
+          </div>
+          <div class="chips">
+            <button class="chip chip--ativo" data-filtro="todos">Todos</button>
+            <button class="chip" data-filtro="bovinos">Bovinos</button>
+            <button class="chip" data-filtro="vegetarianos">Vegetarianos</button>
+            <button class="chip" data-filtro="porcoes">Porções</button>
+          </div>
+        </div>
+
+        <div class="lista-cards">
+          <article class="card" data-categoria="bovinos">
+            <div class="card__img">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0iWX3xf3lgvhFvzStOpGD5KM5d1XHcz9d9uRoFgUWawQsv8UYdjIUyLZg2j8Lvg1YP5hFOo6FgXFctnzkukpbHm3IY7Lt85Ujc_FLaMYWjjcU_QZvGJw1UYxCIWweJ_KTKbJ_oHAczJ1HnOrt8Zezb7Zs8GN8l1LWxHndOffxC-rHVzXxSW1rLROOc45zQb05yzL1I2db4eoQCOMgDe5qd1qtWUWuvYeXVzTNLZ0" alt="Hambúrguer Clássico">
+              <span class="tag">🍔 Clássico</span>
+            </div>
+            <div class="card__corpo">
+              <div>
+                <div class="card__linha"><h3>Clássico</h3><span class="preco">R$ 18,00</span></div>
+                <p>Pão, carne, queijo e salada.</p>
+              </div>
+              <button class="botao-card" data-lanche="Clássico"><span class="material-symbols-outlined">add_shopping_cart</span>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="bovinos">
+            <div class="card__img">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqfYLFM4rNZAWZQVrN-39NiuEg4vRI1QskkL61wzLVxG9o61EbiQhw0umW0XtOKImuaTILor_9c8mZwotHc6WUMTr6P6P8FxalQ4mx5KThHWzMeEFb8SnOHR6UvPbkl2_jboijQtGYMWbDsC1ftcYvbKIWiJj4vi81Xd91Swd2kR1MElqWcHcGCh3391Mo6NjV_-WeLUDf0SonvgV7afeMetDb9pGEeEjMEikbmXc" alt="Hambúrguer Bacon Max">
+              <span class="tag">🥓 Especial</span>
+              <span class="tag tag--dir">Mais Pedido</span>
+            </div>
+            <div class="card__corpo">
+              <div>
+                <div class="card__linha"><h3>Bacon Max</h3><span class="preco">R$ 26,00</span></div>
+                <p>Carne dupla, bacon crocante e cheddar.</p>
+              </div>
+              <button class="botao-card botao-card--destaque" data-lanche="Bacon Max"><span class="material-symbols-outlined">add_shopping_cart</span>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="vegetarianos">
+            <div class="card__img">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE9o8VRfWNdE9hg11TuSYhocsYmaVZIH7Dqbnl_f3zXv1ieTihFusPoFjvw9H1Uxh3X0obwXPqLQHg5ghEu7nKhRG4_bB5bYdHU1PkVElNq_5GbooxgYp7pP4kKDqCiAGlQPQ4-rafCTm1-bJw3hV_20wMsQQ582esqMaL0QMb-MKtXtMnfk3LEEfxurWk0kZoHd1XC7EVYfDWxkH6OKfVTX59KRpgbkcEejx4msc" alt="Hambúrguer Veggie">
+              <span class="tag">🌱 Plant-based</span>
+              <span class="tag tag--dir tag--neutra">Opção Vegana</span>
+            </div>
+            <div class="card__corpo">
+              <div>
+                <div class="card__linha"><h3>Veggie</h3><span class="preco">R$ 22,00</span></div>
+                <p>Hambúrguer de grão-de-bico e molho verde.</p>
+              </div>
+              <button class="botao-card" data-lanche="Veggie"><span class="material-symbols-outlined">add_shopping_cart</span>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="card" data-categoria="porcoes">
+            <div class="card__img">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB7e4h6XB-YL9tczQMvWR8CNqnnbSvBk6J8UQjw68fwsncQgEyEQkQmBNJVCL2GKx9tezbpjVWtFG2ninAznJd-N3RAjj5NsztlcVz9KtBrsOAoCUL-TzTSBEBW7u3I-K8KxEuj5ab9kuTOSl0gp-z6b00NYyuwLWALNJRGEBF8Bbd6f-8kGB6gTMQo3h5R2x9ASpJN5bDFOut6n0KX5e-fX6yWiGsfRUoACgSArg" alt="Batata Frita Crocante">
+              <span class="tag">🍟 Acompanhamento</span>
+            </div>
+            <div class="card__corpo">
+              <div>
+                <div class="card__linha"><h3>Batata Frita</h3><span class="preco">R$ 12,00</span></div>
+                <p>Porção crocante para dividir.</p>
+              </div>
+              <button class="botao-card" data-lanche="Batata Frita"><span class="material-symbols-outlined">add_shopping_cart</span>Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOÇÕES -->
+    <section class="secao" id="promocoes">
+      <div class="container">
+        <div class="cabecalho cabecalho--centro">
+          <div class="pilula"><span class="material-symbols-outlined i-16">timer</span>OFERTAS DA SEMANA</div>
+          <h2>Promoções</h2>
+          <p>Economize sem abrir mão do sabor autêntico. Válido por tempo limitado para pedidos pelo site ou balcão.</p>
+        </div>
+
+        <div class="lista-promo">
+          <div class="promo promo--1">
+            <div>
+              <div class="promo__topo">
+                <span class="promo__cupom">CUPOM: COMBO22</span>
+                <span class="promo__tempo"><span class="material-symbols-outlined i-16">schedule</span> Restam 4h</span>
+              </div>
+              <h3>🔥 Combo Clássico + Refri por R$ 22</h3>
+              <p>O burguer tradicional com queijo cremoso + refrigerante lata 350ml bem gelado.</p>
+            </div>
+            <div class="promo__rodape">
+              <span class="promo__valor">R$ 22,00</span>
+              <button class="promo__btn" data-promo="Combo Clássico + Refri">Aproveitar</button>
+            </div>
+          </div>
+
+          <div class="promo promo--2">
+            <div>
+              <div class="promo__topo">
+                <span class="promo__cupom">QUARTA-FEIRA</span>
+                <span class="material-symbols-outlined i-24">celebration</span>
+              </div>
+              <h3>🎉 Quarta: batata grátis</h3>
+              <p>Na compra de qualquer hambúrguer artesanal, a porção individual de batata frita rústica sai por nossa conta.</p>
+            </div>
+            <div class="promo__rodape">
+              <span class="promo__valor">Custo Zero na Batata</span>
+              <button class="promo__btn" data-promo="Quarta: batata grátis">Pedir na Quarta</button>
+            </div>
+          </div>
+
+          <div class="promo promo--3">
+            <div>
+              <div class="promo__topo">
+                <span class="promo__cupom">GALERA UNIDA</span>
+                <span class="material-symbols-outlined i-24">stars</span>
+              </div>
+              <h3>⭐ Compre 2 e leve 3</h3>
+              <p>Compre dois burguers artesanais da linha especial e ganhe o terceiro para presentear seu amigo da turma.</p>
+            </div>
+            <div class="promo__rodape">
+              <span class="promo__valor">33% OFF no Grupo</span>
+              <button class="promo__btn" data-promo="Compre 2 e leve 3">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PEDIDO -->
+    <section class="secao secao--rosa" id="pedido">
+      <div class="container">
+        <div class="cabecalho cabecalho--centro cabecalho--estreito">
+          <div class="pilula"><span class="material-symbols-outlined i-16">touch_app</span>PEDIDO EM 1 MINUTO</div>
+          <h2>Faça seu pedido</h2>
+          <p>Personalize seu lanche, ajuste as quantidades e envie direto para nossa cozinha artesanal.</p>
+        </div>
+
+        <div class="pedido__grade">
+          <form class="form" id="form-pedido">
+            <div class="campo">
+              <label for="nome">Nome <span>*</span></label>
+              <div class="campo__caixa">
+                <span class="material-symbols-outlined i-20">person</span>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="lanche">Lanche <span>*</span></label>
+              <div class="campo__caixa">
+                <span class="material-symbols-outlined i-20">lunch_dining</span>
+                <select id="lanche" required>
+                  <option value="Clássico" data-preco="18">Clássico (R$ 18,00)</option>
+                  <option value="Bacon Max" data-preco="26" selected>Bacon Max (R$ 26,00)</option>
+                  <option value="Veggie" data-preco="22">Veggie (R$ 22,00)</option>
+                  <option value="Batata Frita" data-preco="12">Batata Frita (R$ 12,00)</option>
+                </select>
+                <span class="material-symbols-outlined i-20 seta">expand_more</span>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="qtd">Quantidade</label>
+              <div class="qtd">
+                <div class="qtd__controle">
+                  <button type="button" data-delta="-1" aria-label="Diminuir quantidade"><span class="material-symbols-outlined">remove</span></button>
+                  <input type="number" id="qtd" value="1" min="1" max="20" readonly>
+                  <button type="button" data-delta="1" aria-label="Aumentar quantidade"><span class="material-symbols-outlined">add</span></button>
+                </div>
+                <span class="qtd__texto">unidades para o pedido</span>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="obs">Observações do Ponto ou Retirada <small>(Opcional)</small></label>
+              <input class="campo__solto" type="text" id="obs" placeholder="Ex: Ponto da carne bem passada, sem cebola...">
+            </div>
+
+            <button class="botao botao--lg botao--total" type="submit"><span class="material-symbols-outlined i-22">shopping_bag</span>Enviar pedido</button>
+            <p class="form__seguro">🔒 Pagamento seguro via Pix, Cartão ou Dinheiro na entrega</p>
+          </form>
+
+          <aside class="resumo">
+            <div class="resumo__topo">
+              <h3><span class="material-symbols-outlined">receipt_long</span>Resumo do Pedido</h3>
+              <span class="resumo__status">Cozinha Ativa</span>
+            </div>
+            <div class="resumo__linhas">
+              <div class="resumo__item"><span id="resumo-item">1x Bacon Max</span><b id="resumo-preco">R$ 26,00</b></div>
+              <div class="resumo__info"><span>Cliente:</span><i id="resumo-cliente">Não informado</i></div>
+              <div class="resumo__info"><span>Taxa de Entrega:</span><b class="rosa">Grátis (Promoção)</b></div>
+              <div class="resumo__info"><span>Tempo Estimado:</span><b>25 - 35 min</b></div>
+            </div>
+            <hr>
+            <div class="resumo__total">
+              <div><small>Valor Total:</small><strong id="resumo-total">R$ 26,00</strong></div>
+              <span class="resumo__preparo"><i></i> Preparo imediato</span>
+            </div>
+            <div class="sucesso" id="sucesso" hidden>
+              <b><span class="material-symbols-outlined">check_circle</span>Pedido recebido com sucesso!</b>
+              <p>A cozinha do Portal Burguer já está na chapa.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMUNIDADE -->
+    <section class="secao comunidade" id="sobre">
+      <div class="container">
+        <div class="hashtag"><span class="material-symbols-outlined i-20">tag</span>#portalburguer - É só praticar!</div>
+        <h3>A hamburgueria feita por quem ama sabor e design.</h3>
+        <p>Marque a gente nas suas fotos e apareça no mural oficial da turma no Instagram e TikTok.</p>
+        <div class="mural">
+          <div class="mural__item"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFsNpPlMhMkppavrJvhFS0eZ0xniKfabO8yUwLJUh_ruQwx0ty1WGvzhmStmQi6_TNPmrQYPeMtbzrlJb7FuLR_PYqnqhci79YOzCbWhOujnMa4JE3sL6EIH8GyXl6UBXHUHbL5U9Gp4uqVRDZemlNkV1zcHCoZdCrWBDjA7T90BPbLnoQqe7sjptJF6HJydR_zxJu0vFbFstAo0Z9h5l1EP-dbtXfqWNjVi67PCc" alt="Momento Portal Burguer"><span>@brunocria</span></div>
+          <div class="mural__item"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC88C9wmqpoIumZrokSPbuq2tXha7jcY2XeguS6YBUGP81dTruIxg9sFHsKmcLNxUjgs7rXxZzW080ZfY2BvixrfavN9fWB1xGarjDpUGPvGp8siuA7vf3KLU6pQUZy1BxoXTUtR6-p0wAbC5IhU66XYJeuA-zSV5UwEvZBJEmNzE078nMXYhqIbnt_0ploIHhouOuPsUe0LhsYKF2aNKSj9tgC5J9l3VD1YQe2zO8" alt="Mão segurando burger artesanal"><span>@larissa.food</span></div>
+          <div class="mural__item"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKEg4_Uyz2amJ89oPsqs11HxAdtNKhIL0eMPwi5nleQgS6WfTh3ESte-F0mqpPEfRw-R9ie8l1WoM0SAf4bh3b0T_KY62goo4iwMqK6WcpjKguikzSnNTg3aUL3zW_b5WTxATEtczwgdP0Eqp9fKbV7wkbULIZfAro9VSRGtFUSumyiClx-jpeSLXsHCMfOqCHZ23HBsDT9ZJAyvqwrOAUpDJfMd-mRSfWFtxhyeg" alt="Turma Portal Burguer"><span>@portaldevs</span></div>
+          <div class="mural__item"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqeYK71YxJVt-4DRCPwnunTbu6gaSJ7951oqiwx_cokb7LOeI2uFLqUoC1kfAvzSg_Vhaczniv1mTcU7PYAl8-DInkfLn3wIHjvPtJm4pOCWm99y0xfEGdzzmKhKH0pkB9E882nz82iezs5kbnBPDD1OXYFoBAcV-OD7eQA81V2Fvcu0iH2V051M80ne1cYqONGco1KKdDlsIqTvR1dGvwNYiICYsP2gIqcbxrT08" alt="Combo do dia"><span>@burguerlovers</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <div class="rodape__grade">
+        <div>
+          <a class="marca marca--rodape" href="#"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUonWIeWvLQNCYNbuY236ErvJmZAIoq9s2ItFenOUtYBtj5bABQwWrPOdiTPZxZnsIupI2QLaeul8nYr0exPnf0cB75pu_p0d62n92BxololdypF7Ktr4Et2d9Pa61uahmREATOyLIPLl0-paA8sECW_LMYIhOs9jq7q7t4yIaNgTfDg3GCm1ishSHBpeSasT7UZgcjEj39c9WF_UzNlTx6P5-U0KxWfBHeTkLZk4" alt="Logo Portal Burguer"><span>Portal Burguer</span></a>
+          <p>Sabor artesanal autêntico, burgers com carne 100% nobre e ingredientes selecionados com paixão gastronômica.</p>
+        </div>
+        <div>
+          <h4>Horário de Funcionamento</h4>
+          <ul>
+            <li>Terça a Quinta: 18h às 23h30</li>
+            <li>Sexta e Sábado: 18h às 00h30</li>
+            <li>Domingo: 17h30 às 23h</li>
+            <li class="rosa">Segunda-feira: Fechado</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento &amp; Delivery</h4>
+          <ul>
+            <li><span class="material-symbols-outlined">call</span> (11) 99876-5432</li>
+            <li><span class="material-symbols-outlined">location_on</span> Rua Gourmet, 342 - Jardins</li>
+            <li><span class="material-symbols-outlined">mail</span> contato@portalburguer.com.br</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Conecte-se</h4>
+          <p>Siga nosso feed para novidades quentes e combos do dia.</p>
+          <div class="redes">
+            <a href="#" aria-label="Instagram"><span class="material-symbols-outlined i-20">photo_camera</span></a>
+            <a href="#" aria-label="TikTok"><span class="material-symbols-outlined i-20">play_circle</span></a>
+            <a href="#" aria-label="WhatsApp"><span class="material-symbols-outlined i-20">chat</span></a>
+          </div>
+        </div>
+      </div>
+      <p class="rodape__copy">© 2025 Portal Burguer Hamburgueria Artesanal. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const $ = id => document.getElementById(id);
+
+    function atualizar() {
+      const op = $('lanche').selectedOptions[0];
+      const qtd = +$('qtd').value || 1;
+      const total = ('R$ ' + (op.dataset.preco * qtd).toFixed(2)).replace('.', ',');
+      $('resumo-item').textContent = qtd + 'x ' + op.value;
+      $('resumo-preco').textContent = total;
+      $('resumo-total').textContent = total;
+      $('resumo-cliente').textContent = $('nome').value.trim() || 'Não informado';
+    }
+
+    function irParaPedido() {
+      $('pedido').scrollIntoView({ behavior: 'smooth' });
+      $('nome').focus({ preventScroll: true });
+    }
+
+    document.querySelectorAll('[data-delta]').forEach(b => b.addEventListener('click', () => {
+      $('qtd').value = Math.max(1, Math.min(20, (+$('qtd').value || 1) + +b.dataset.delta));
+      atualizar();
+    }));
+
+    document.querySelectorAll('[data-lanche]').forEach(b => b.addEventListener('click', () => {
+      $('lanche').value = b.dataset.lanche;
+      atualizar();
+      irParaPedido();
+    }));
+
+    document.querySelectorAll('[data-promo]').forEach(b => b.addEventListener('click', () => {
+      $('obs').value = 'Promoção aplicada: ' + b.dataset.promo;
+      irParaPedido();
+    }));
+
+    document.querySelectorAll('.chip').forEach(chip => chip.addEventListener('click', () => {
+      document.querySelectorAll('.chip').forEach(c => c.classList.toggle('chip--ativo', c === chip));
+      document.querySelectorAll('.card').forEach(card => {
+        card.hidden = chip.dataset.filtro !== 'todos' && card.dataset.categoria !== chip.dataset.filtro;
+      });
+    }));
+
+    $('nome').addEventListener('input', atualizar);
+    $('lanche').addEventListener('change', atualizar);
+
+    $('form-pedido').addEventListener('submit', e => {
+      e.preventDefault();
+      $('sucesso').hidden = false;
+      $('sucesso').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    });
+
+    atualizar();
+  </script>
+</body>
+</html>
