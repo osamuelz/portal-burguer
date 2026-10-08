@@ -3,7 +3,7 @@
 Um projeto de uma página web completa e interativa para uma hamburgueria artesanal. 
 
 > 🔗 **[Acesse o projeto online aqui
-](osamuelz.github.io/portal-burguer)**
+](https://osamuelz.github.io/portal-burguer/)**
 
 ## 📋 Sobre o Projeto
 
